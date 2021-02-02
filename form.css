@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap')");
+@import url("@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap');");
+@import url("@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&display=swap');");
+@import url("./footerStyle.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+.grid {
+  margin: 0 200px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 23vh 77vh;
+  grid-gap: 0px 16px;
+}
+
+.item {
+  padding: 30px;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+/* *********** */
+/*     Nav     */
+/* *********** */
+.item.nav {
+  grid-area: 1/1/2/13;
+  padding: 0;
+  padding: 20px 0px;
+}
+.logo {
+  /* width: 100px; */
+}
+.logo img {
+  width: 180px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-links > ul > li {
+  list-style: none;
+  padding-left: 3em;
+  flex: 1;
+}
+
+.nav-links > ul > li > a {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 800;
+  border-bottom: 4px dotted transparent;
+  transition: color ease-in-out 0.3s;
+  transition: border-bottom ease-in-out 0.5s;
+}
+
+/* Nav Hovers*/
+.nav-links > ul > .home-nav > a:hover {
+  color: #4c9bd2;
+  border-bottom: 4px dotted #4c9bd2;
+}
+
+.nav-links > ul > .activiteiten-nav > a:hover {
+  color: #f9b715;
+  border-bottom: 4px dotted #f9b715;
+}
+
+.nav-links > ul > .vrijwilligers-nav > a {
+  color: #4caf4f;
+  border-bottom: 4px dotted #4caf4f;
+}
+
+/**********/
+.item.home1 {
+  grid-area: 2/1/2/13;
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.page1 {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.vrijwilligers-form {
+  /* display: flex;
+  justify-content: space-around;
+  flex-direction: row; */
+  margin: auto;
+  border-radius: 5px;
+  background-color: #dddddd;
+  padding: 30px;
+  flex-basis: 30%;
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.vrijwilligers-form input[type="submit"] {
+  margin-top: 16px;
+}
+
+input,
+select,
+textarea {
+  border-radius: 5px;
+  border: 5px solid white;
+}
+
+label,
+.vrijwilligers-form input:last-of-type {
+  padding: 0.5rem 0;
+}
+
+input[type="text"] select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[id="subject"] {
+  height: 100px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}

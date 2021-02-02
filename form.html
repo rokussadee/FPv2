@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./form.css" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item nav">
+        <nav>
+          <div class="logo">
+            <img src="./full_projects_imgs/stapsteenlogov3.svg" alt="" />
+          </div>
+          <div class="nav-links">
+            <ul>
+              <li class="home-nav"><a href="./index.html">Home</a></li>
+              <li class="activiteiten-nav">
+                <a href="./activiteiten.html">Activiteiten</a>
+              </li>
+              <li class="vrijwilligers-nav">
+                <a href="./vrijwilligers.html">Vrijwilligers</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="item home1">
+        <div class="page1">
+          <div class="vrijwilligers-form">
+            <form action="action_page.php">
+              <label for="fname">Voornaam</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+
+              <label for="lname">Achternaam</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+
+              <label for="email">E-mail</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Your e-mail .."
+              />
+              <label for="subject">Onderwerp</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="..."
+              />
+
+              <label for="send-to">Verzenden naar</label>
+              <select id="send-to" name="send-to">
+                <option value="info@stapsteen.be">info@stapsteen.be</option>
+                <option value="E-mail 2">E-mail 2</option>
+                <option value="E-mail 3">E-mail 3</option>
+              </select>
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-vrijwilligers">
+      <div class="green">
+        <div>
+          <p class="footer-stapsteen">
+            Stapsteen vzw
+          </p>
+          <p>
+            Chrysantenstraat 33 1020 Laken (Brussel)
+          </p>
+          <p>
+            IBAN BE21 6528 1576 2103
+          </p>
+        </div>
+        <div>
+          <p>
+            Nederlands
+          </p>
+          <p>
+            English
+          </p>
+          <p>
+            Francais
+          </p>
+        </div>
+
+        <div class="footer-flex">
+            <div class="footer-erkend">
+              <p>
+                Erkend en gesubsidiëerd door:
+              </p>
+              <figure>
+                <img
+                  src="https://www.kindengezin.be/img/kind-en-gezin.png"
+                  alt="Kind & Gezin"
+                />
+                <img
+                  src="https://www.kbs-frb.be/images/kbs_logo_nl.svg"
+                  alt="Koning Boudewijnstichting"
+                />
+              </figure>
+            </div>
+            <div class="footer-gesponsord">
+              <p>
+                Gesponsord door:
+              </p>
+              <figure>
+                <img src="https://www.skryv.com/static/logo.png" alt="skryv" />
+              </figure>
+            </div>
+          </div>
+
+  </body>
+</html>
